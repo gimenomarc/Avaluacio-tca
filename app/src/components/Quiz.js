@@ -34,7 +34,7 @@ const Quiz = () => {
 
   return (
     <Layout>
-      <div className="mb-4">
+      <div className="mb-4 w-96">
         <h2 className="text-xl font-bold mb-2">{currentQuestion.text}</h2>
         {currentQuestion.options.map((option) => (
           <Option
@@ -51,5 +51,6 @@ const Quiz = () => {
 };
 
 export default Quiz;
+
 
 
