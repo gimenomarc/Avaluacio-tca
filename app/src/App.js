@@ -13,7 +13,7 @@ import TRAnorexiaNerviosaPage from './pages/TR_anorexiaNerviosa';
 import TRBulimiaNerviosaPage from './pages/TR_bulimiaNerviosa';
 import TRFartaneresPage from './pages/TR_fartaneres';
 import LeyProteccionDatosPage from './pages/proteccioDades';
-
+import Header from './components/Header'
 
 function App() {
   return (
@@ -24,15 +24,16 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/datos-personales" element={<DatosPersonales />} />
         <Route path="/quiz" element={<Quiz />} />
-        <Route path="/infoTCA" element={<InfoTCA />} />
+        <Route path="/infoTCA/*" element={<InfoTCA />} />
         <Route path="/infoTCA/pica" element={<TRPicaPage />} />
         <Route path="/infoTCA/trastorn-ruminacio" element={<TRRuminacioPage />} />
         <Route path="/infoTCA/trastorn-ingesta-aliments" element={<TRIngestaAlimentsPage />} />
         <Route path="/infoTCA/anorexia-nerviosa" element={<TRAnorexiaNerviosaPage />} />
         <Route path="/infoTCA/bulimia-nerviosa" element={<TRBulimiaNerviosaPage />} />
         <Route path="/infoTCA/trastorn-fartaneres" element={<TRFartaneresPage />} />  
-        <Route path="/llei-proteccio-dades" element={<LeyProteccionDatosPage />} />      
+        <Route path="/llei-proteccio-dades" element={<LeyProteccionDatosPage />} />
       </Routes>
+      <Header />
     </Router>
   );
 }
