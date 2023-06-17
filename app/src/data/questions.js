@@ -661,7 +661,7 @@ const questions = [
     },
     {
         id: 61,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'M’agradaria canviar la meva personalitat.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -672,7 +672,7 @@ const questions = [
     },
     {
         id: 62,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Em sento satisfet/a amb el meu pes actual.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -683,7 +683,7 @@ const questions = [
     },
     {
         id: 63,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: ' El tacte de la majoria dels aliments em produeix rebuig.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -694,7 +694,7 @@ const questions = [
     },
     {
         id: 64,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'En els últims 3 mesos i més d’un cop per setmana he perdut el control del que menjo.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -705,7 +705,7 @@ const questions = [
     },
     {
         id: 65,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'M’agradaria realitzar-me diferents operacions estètiques.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -716,7 +716,7 @@ const questions = [
     },
     {
         id: 66,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Puc menjar el que vulgui, sempre que després ho vomiti.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -727,7 +727,7 @@ const questions = [
     },
     {
         id: 67,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Tinc regurgitacions (expulsió de menjar procedent de lesòfag o de lestómac sense que hi hagi nàusees ni contraccions enèrgiques dels músculs abdominals).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -738,7 +738,7 @@ const questions = [
     },
     {
         id: 68,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Tinc por a guanyar pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -749,7 +749,7 @@ const questions = [
     },
     {
         id: 69,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Em considero una persona vàlida.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -760,7 +760,7 @@ const questions = [
     },
     {
         id: 70,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Normalment (més de 3 cops per setmana) em sento molt cansat/da o sense energia.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -771,7 +771,7 @@ const questions = [
     },
     {
         id: 71,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Prenc suplements nutritius en substitució del menjar.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -782,7 +782,7 @@ const questions = [
     },
     {
         id: 72,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Quan estic trist/a tinc més gana.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -793,7 +793,7 @@ const questions = [
     },
     {
         id: 73,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Prenc medicaments (hormona tiroidal, per tractar la diabetis,...) per controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -804,7 +804,7 @@ const questions = [
     },
     {
         id: 74,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Soc molt meticulós/a amb els meus actes per evitar conseqüències inesperades.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -815,7 +815,7 @@ const questions = [
     },
     {
         id: 75,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Si tinc un esdeveniment, però no em sento a gust amb el meu aspecte, no hi vaig.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -826,7 +826,7 @@ const questions = [
     },
     {
         id: 76,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Tinc menys desig sexual del que crec que hauria de tenir.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -837,7 +837,7 @@ const questions = [
     },
     {
         id: 77,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Penso que és més important l’aspecte físic que la salut.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -848,7 +848,7 @@ const questions = [
     },
     {
         id: 78,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Segueixo una dieta vegetariana o vegana.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -859,7 +859,7 @@ const questions = [
     },
     {
         id: 79,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Em costa gaudir inclús de les coses que m’agraden.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -870,7 +870,7 @@ const questions = [
     },
     {
         id: 80,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Vomitar em fa sentir bé.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -881,7 +881,7 @@ const questions = [
     },
     {
         id: 81,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'M’agradaria canviar el meu aspecte físic.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -892,7 +892,7 @@ const questions = [
     },
     {
         id: 82,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Ho passo malament si he de menjar en públic.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -903,7 +903,7 @@ const questions = [
     },
     {
         id: 83,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'En els últims 3 mesos me pesat sovint (més de 2 cops per setmana) per controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -914,7 +914,7 @@ const questions = [
     },
     {
         id: 84,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Des del meu punt de vista, menjo poc.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -925,7 +925,7 @@ const questions = [
     },
     {
         id: 85,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'Segueixo una dieta hipocalòrica.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -936,7 +936,7 @@ const questions = [
     },
     {
         id: 86,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
+        text: 'En els últims 3 mesos sovint (més d’un cop per setmana) m’administro ènemes (medicament líquid que sintrodueix a lorganisme a través de lanus i que serveix per netejar i descarregar l’intestí).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -945,8 +945,6 @@ const questions = [
             { id: 5, text: 'Totalment d’acord' },
         ],
     },
-    
-    // 
 ];
 
 export default questions;
