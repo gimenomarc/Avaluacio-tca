@@ -6,7 +6,7 @@ function Question({ question }) {
     <div>
       <h2>{question.text}</h2>
       {question.options.map((option) => (
-        <Option key={option.id} text={option.text} />
+        <Option key={option.id} text={option.text} categoria={option.categoria} inverted={option.inverted}/>
       ))}
     </div>
   );

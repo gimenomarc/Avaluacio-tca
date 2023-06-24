@@ -14,6 +14,7 @@ import TRBulimiaNerviosaPage from './pages/TR_bulimiaNerviosa';
 import TRFartaneresPage from './pages/TR_fartaneres';
 import LeyProteccionDatosPage from './pages/proteccioDades';
 import Header from './components/Header'
+import Result from './components/Result'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/infoTCA/bulimia-nerviosa" element={<TRBulimiaNerviosaPage />} />
         <Route path="/infoTCA/trastorn-fartaneres" element={<TRFartaneresPage />} />  
         <Route path="/llei-proteccio-dades" element={<LeyProteccionDatosPage />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
       <Header />
     </Router>

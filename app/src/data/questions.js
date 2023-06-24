@@ -1,17 +1,6 @@
 const questions = [
     {
         id: 1,
-        text: 'Em considero una persona controladora.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 2,
         text: 'El meu fracàs és degut, en part, al meu aspecte físic.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -20,9 +9,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'AP',
     },
     {
-        id: 3,
+        id: 2,
         text: 'Després de menjar molt em sento malament amb mi mateix/a.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -31,9 +22,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SC', 
     },
     {
-        id: 4,
+        id: 3,
         text: 'Planifico moments per poder menjar sense control i que no em vegi ningú.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -42,10 +35,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FG',
     },
     {
-        id: 5,
-        text: ' M’agrada menjar gel.',
+        id: 4,
+        text: 'M’agrada menjar gel.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -53,9 +48,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CSNN',
     },
     {
-        id: 6,
+        id: 5,
         text: 'M’han d’alimentar de manera artificial (a través duna sonda col·locada a lestómac o lintestí prim o a través duna sonda inserida en una vena mitjançant la qual els nutrients ingressen a la sang directament).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -64,9 +61,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SOAA',
     },
     {
-        id: 7,
+        id: 6,
         text: 'En els últims 3 mesos prenc sovint (més d’un cop per setmana) prenc medicaments contra el restrenyiment ocasional.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -75,20 +74,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CM',
     },
     {
-        id: 8,
-        text: 'Consumeixo cafè de manera habitual.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 9,
+        id: 7,
         text: 'Davant d’una situació complicada menjo sense control.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -97,9 +87,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FC',
     },
     {
-        id: 10,
+        id: 8,
         text: 'No consumeixo aliments alts en calories o greixos.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -108,9 +100,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'D',
     },
     {
-        id: 11,
+        id: 9,
         text: 'Només menjo per sobreviure, no m’agrada menjar.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -119,9 +113,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'RM',
     },
     {
-        id: 12,
+        id: 10,
         text: 'Realitzo exercici cardiovascular per compensar les kilocalories ingerides.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -130,31 +126,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'EF',
     },
     {
-        id: 13,
-        text: 'Necessito tenir el control de tot el meu entorn.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 14,
-        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 15,
+        id: 11,
         text: 'En els últims 3 mesos sovint (més d’un cop per setmana) penso que he de perdre pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -163,9 +139,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'P',
     },
     {
-        id: 16,
+        id: 12,
         text: 'Estic deixant de costat les relacions personals.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -174,10 +152,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SD',
     },
     {
-        id: 17,
-        text: 'Si sento que estic massa ple/na, em provoco el vòmit.',
+        id: 13,
+        text: 'L’esport que més es mira a Europa és el futbol.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -185,9 +165,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'X',
     },
     {
-        id: 18,
+        id: 14,
         text: 'En els últims 3 mesos sovint (més d’un cop per setmana) mesuro les diferents parts del meu cos.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -196,9 +178,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'F',
     },
     {
-        id: 19,
+        id: 15,
         text: 'Estic orgullós/a de qui soc.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -207,9 +191,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'AS',
     },
     {
-        id: 20,
+        id: 16,
         text: 'M’agrada el gust del sabó.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -218,9 +204,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CSNN',
     },
     {
-        id: 21,
+        id: 17,
         text: 'He suprimit grups d’aliments de la meva dieta.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -229,9 +217,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'D',
     },
     {
-        id: 22,
+        id: 18,
         text: 'Cada cop gaudeixo menys fent les coses que m’agraden.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -240,31 +230,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SD',
     },
     {
-        id: 23,
-        text: 'Consumeixo amfetamines de manera habitual.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 24,
-        text: 'Quan estic trist/a no tinc gana.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 25,
+        id: 19,
         text: 'Quan vomito després de menjar, em sento millor.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -273,10 +243,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'V',
     },
     {
-        id: 26,
-        text: 'Menjo sense tenir gana.',
+        id: 20,
+        text: 'La majoria de la gent prefereix guanyar a perdre.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -284,20 +256,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'X',
     },
     {
-        id: 27,
-        text: 'M’he realitzat alguna operació estètica.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 28,
+        id: 21,
         text: 'Puc menjar molt, en un temps molt reduït.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -306,9 +269,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FG',
     },
     {
-        id: 29,
+        id: 22,
         text: 'Prenc laxants per tal de controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -317,9 +282,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CM',
     },
     {
-        id: 30,
+        id: 23,
         text: 'No tinc un pes saludable i aquest afecta negativament la meva salut.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -328,9 +295,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'P',
     },
     {
-        id: 31,
+        id: 24,
         text: 'Tinc por de veure’m gras/sa.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -339,9 +308,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'F',
     },
     {
-        id: 32,
+        id: 25,
         text: 'Duc a terme dejuni intermitent.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -350,9 +321,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'D',
     },
     {
-        id: 33,
+        id: 26,
         text: 'Quan estic angoixat/da menjo sense control.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -361,9 +334,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FC',
     },
     {
-        id: 34,
+        id: 27,
         text: 'Em produeix angoixa no saber el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -372,9 +347,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'P',
     },
     {
-        id: 35,
+        id: 28,
         text: 'Per a mi, l’objectiu de fer exercici és baixar de pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -383,9 +360,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'EF',
     },
     {
-        id: 36,
+        id: 29,
         text: 'Em sento còmode amb mi mateix/a.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -394,9 +373,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'AS',
     },
     {
-        id: 37,
+        id: 30,
         text: 'He de sentir-me bé amb la meva aparença física per fer front a un esdeveniment social.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -405,9 +386,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'AP',
     },
     {
-        id: 38,
+        id: 31,
         text: 'El menjar em produeix rebuig.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -416,9 +399,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'RM',
     },
     {
-        id: 39,
+        id: 32,
         text: 'En els últims 3 mesos i més d’un cop per setmana he menjat fins estar desagradablement ple/na.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -427,9 +412,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FG',
     },
     {
-        id: 40,
+        id: 33,
         text: 'Vomitar m’evita guanyar pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -438,9 +425,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'V',
     },
     {
-        id: 41,
+        id: 34,
         text: 'Gaudeixo de les coses que m’agraden.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -449,9 +438,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'SD',
     },
     {
-        id: 42,
+        id: 35,
         text: 'Em provoca angoixa saber que tinc un dinar/sopar familiar, d’amics, d’empresa,...',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -460,9 +451,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CS',
     },
     {
-        id: 43,
+        id: 36,
         text: 'Quan començo a menjar no puc parar.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -471,9 +464,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FC',
     },
     {
-        id: 44,
+        id: 37,
         text: 'Menjo substàncies que no són nutritives (per exemple, xiclets, gel, paper, cola,..)',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -482,20 +477,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CSNN',
     },
     {
-        id: 45,
-        text: 'Consumeixo alcohol de manera habitual.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 46,
+        id: 38,
         text: 'La meva alimentació és correcte i adequada i em permet gaudir d’una bona salut.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -504,9 +490,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'D',
     },
     {
-        id: 47,
+        id: 39,
         text: 'Em sento satisfet/a amb el meu aspecte físic actual.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -515,10 +503,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'F',
     },
     {
-        id: 48,
-        text: 'Faig menys de quatre àpats al dia.',
+        id: 40,
+        text: 'Menjo menys de quatre vegades al dia.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -526,10 +516,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'D',
     },
     {
-        id: 49,
-        text: 'Tots els meus actes estan prèviament calculats.',
+        id: 41,
+        text: 'Últimament el meu rendiment laboral/acadèmic ha disminuït.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -537,20 +529,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SD',
     },
     {
-        id: 50,
-        text: 'Des del meu punt de vista, menjo molt.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 51,
+        id: 42,
         text: 'Els diürètics m’ajuden a controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -559,9 +542,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CM',
     },
     {
-        id: 52,
+        id: 43,
         text: 'Realitzo exercici físic de manera excessiva.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -570,9 +555,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'EF',
     },
     {
-        id: 53,
+        id: 44,
         text: 'Tinc por de veure’m prim.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -581,9 +568,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'F',
     },
     {
-        id: 54,
+        id: 45,
         text: 'Gaudeixo menjant.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -592,9 +581,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'RM',
     },
     {
-        id: 55,
+        id: 46,
         text: 'El meu èxit és degut, en part, al meu aspecte físic.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -603,9 +594,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'AP',
     },
     {
-        id: 56,
+        id: 47,
         text: 'Després de menjar tinc sentiments de culpa.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -614,9 +607,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SC',
     },
     {
-        id: 57,
+        id: 48,
         text: 'Menjo fins trobar-me malament.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -625,9 +620,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FG',
     },
     {
-        id: 58,
+        id: 49,
         text: 'Evito que la gent del meu entorn (amics, família, companys,...) em vegi menjant.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -636,20 +633,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CS',
     },
     {
-        id: 59,
-        text: 'Actuo sense pensar i després me’n penedeixo.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 60,
+        id: 50,
         text: 'M’agrada menjar paper.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -658,9 +646,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CSNN',
     },
     {
-        id: 61,
+        id: 51,
         text: 'M’agradaria canviar la meva personalitat.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -669,9 +659,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'AS',
     },
     {
-        id: 62,
+        id: 52,
         text: 'Em sento satisfet/a amb el meu pes actual.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -680,10 +672,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'P',
     },
     {
-        id: 63,
-        text: ' El tacte de la majoria dels aliments em produeix rebuig.',
+        id: 53,
+        text: 'El tacte de la majoria dels aliments em produeix rebuig.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -691,9 +685,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'RM',
     },
     {
-        id: 64,
+        id: 54,
         text: 'En els últims 3 mesos i més d’un cop per setmana he perdut el control del que menjo.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -702,20 +698,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'FC',
     },
     {
-        id: 65,
-        text: 'M’agradaria realitzar-me diferents operacions estètiques.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 66,
+        id: 55,
         text: 'Puc menjar el que vulgui, sempre que després ho vomiti.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -724,9 +711,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'V',
     },
     {
-        id: 67,
+        id: 56,
         text: 'Tinc regurgitacions (expulsió de menjar procedent de lesòfag o de lestómac sense que hi hagi nàusees ni contraccions enèrgiques dels músculs abdominals).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -735,9 +724,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'R',
     },
     {
-        id: 68,
+        id: 57,
         text: 'Tinc por a guanyar pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -746,9 +737,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'P',
     },
     {
-        id: 69,
+        id: 58,
         text: 'Em considero una persona vàlida.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -757,9 +750,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: true,
+        categoria: 'AS',
     },
     {
-        id: 70,
+        id: 59,
         text: 'Normalment (més de 3 cops per setmana) em sento molt cansat/da o sense energia.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -768,9 +763,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SD',
     },
     {
-        id: 71,
+        id: 60,
         text: 'Prenc suplements nutritius en substitució del menjar.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -779,20 +776,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SOAA',
     },
     {
-        id: 72,
-        text: 'Quan estic trist/a tinc més gana.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 73,
+        id: 61,
         text: 'Prenc medicaments (hormona tiroidal, per tractar la diabetis,...) per controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -801,20 +789,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CM',
     },
     {
-        id: 74,
-        text: 'Soc molt meticulós/a amb els meus actes per evitar conseqüències inesperades.',
-        options: [
-            { id: 1, text: 'Totalment en desacord' },
-            { id: 2, text: 'En desacord' },
-            { id: 3, text: 'Indiferent' },
-            { id: 4, text: 'D’acord' },
-            { id: 5, text: 'Totalment d’acord' },
-        ],
-    },
-    {
-        id: 75,
+        id: 62,
         text: 'Si tinc un esdeveniment, però no em sento a gust amb el meu aspecte, no hi vaig.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -823,9 +802,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'AP',
     },
     {
-        id: 76,
+        id: 63,
         text: 'Tinc menys desig sexual del que crec que hauria de tenir.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -834,9 +815,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SD',
     },
     {
-        id: 77,
+        id: 64,
         text: 'Penso que és més important l’aspecte físic que la salut.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -845,10 +828,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'F',
     },
     {
-        id: 78,
-        text: 'Segueixo una dieta vegetariana o vegana.',
+        id: 65,
+        text: 'Les meves aficions preferides són el tir amb arc i la filatèlia.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -856,9 +841,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'X',
     },
     {
-        id: 79,
+        id: 66,
         text: 'Em costa gaudir inclús de les coses que m’agraden.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -867,9 +854,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'SD',
     },
     {
-        id: 80,
+        id: 67,
         text: 'Vomitar em fa sentir bé.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -878,9 +867,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'V',
     },
     {
-        id: 81,
+        id: 68,
         text: 'M’agradaria canviar el meu aspecte físic.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -889,9 +880,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'AS',
     },
     {
-        id: 82,
+        id: 69,
         text: 'Ho passo malament si he de menjar en públic.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -900,9 +893,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CS',
     },
     {
-        id: 83,
+        id: 70,
         text: 'En els últims 3 mesos me pesat sovint (més de 2 cops per setmana) per controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -911,10 +906,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'P',
     },
     {
-        id: 84,
-        text: 'Des del meu punt de vista, menjo poc.',
+        id: 71,
+        text: 'Si sento que estic massa ple/na, em provoco el vòmit.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -922,10 +919,12 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'V',
     },
     {
-        id: 85,
-        text: 'Segueixo una dieta hipocalòrica.',
+        id: 72,
+        text: 'La poma és una fruita.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -933,9 +932,11 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'X',
     },
     {
-        id: 86,
+        id: 73,
         text: 'En els últims 3 mesos sovint (més d’un cop per setmana) m’administro ènemes (medicament líquid que sintrodueix a lorganisme a través de lanus i que serveix per netejar i descarregar l’intestí).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
@@ -944,6 +945,190 @@ const questions = [
             { id: 4, text: 'D’acord' },
             { id: 5, text: 'Totalment d’acord' },
         ],
+        inverted: false,
+        categoria: 'CM',
+    },
+    {
+        id: 74,
+        text: 'Realitzo exercici físic de manera obsessiva.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'EF',
+    },
+    {
+        id: 75,
+        text: 'He de prendre suplements nutritius per tal de tenir una alimentació completa.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'SOAA',
+    },
+    {
+        id: 76,
+        text: 'El gust de la majoria dels aliments em produeix rebuig.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'RM',
+    },
+    {
+        id: 77,
+        text: 'Després de menjar molt em sento culpable.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'SC',
+    },
+    {
+        id: 78,
+        text: 'M’agradaria ser d’una altre manera.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'AS',
+    },
+    {
+        id: 79,
+        text: 'Sento que perdo el control del què menjo.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'FC',
+    },
+    {
+        id: 80,
+        text: 'Vomitar m’ajuda a controlar el pes.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'V',
+    },
+    {
+        id: 81,
+        text: 'Per a mi, l’objectiu de fer exercici és estar en forma i saludable.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: true,
+        categoria: 'EF',
+    },
+    {
+        id: 82,
+        text: 'No vull menjar en públic per vergonya a que em regurgitin (expulsió de menjar procedent de l’esòfag o de l’estómac sense que hi hagi nàusees ni contraccions enèrgiques dels músculs abdominals) els aliments.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'R',
+    },
+    {
+        id: 83,
+        text: 'M’agrada el gust de la pintura.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'CSNN',
+    },
+    {
+        id: 84,
+        text: 'Menjo quatre o més vegades al dia.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: true,
+        categoria: 'D',
+    },
+    {
+        id: 85,
+        text: 'No m’agrada comprar coses que em semblen excessivament cares.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'X',
+    },
+    {
+        id: 86,
+        text: 'M’agrada el gust del guix.',
+        options: [
+            { id: 1, text: 'Totalment en desacord' },
+            { id: 2, text: 'En desacord' },
+            { id: 3, text: 'Indiferent' },
+            { id: 4, text: 'D’acord' },
+            { id: 5, text: 'Totalment d’acord' },
+        ],
+        inverted: false,
+        categoria: 'CSNN',
+    },
+    {
+        id: 87,
+        text: 'Menjo sense tenir gana.',
+        options: [
+            { id: 1, text: 'Totalment en desacord'},
+            { id: 2, text: 'En desacord'},
+            { id: 3, text: 'Indiferent'},
+            { id: 4, text: 'D’acord'},
+            { id: 5, text: 'Totalment d’acord'},
+        ],
+        inverted: false,
+        categoria: 'FG',
     },
 ];
 
