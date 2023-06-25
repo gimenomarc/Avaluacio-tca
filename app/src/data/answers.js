@@ -20,7 +20,6 @@ const answers = [
             },
         ],
     },
-
     {
         id: 2,
         name:'AP',

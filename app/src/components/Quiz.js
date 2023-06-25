@@ -6,13 +6,15 @@ import Button from './Button';
 import questions from '../data/questions';
 import {make_inverter} from './Auxiliar';
 import Values from '../data/Values';
-import Result from './Result'
+import answers  from '../data/answers';
+import {eval_test} from './Result';
 
 const Quiz = () => {
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState(null);
   const responses = Values();
+  console.log(answers[0]['values']);
   let list_responses = useState([])
   const handleNextQuestion = () => {
     const selectedOption = currentQuestion.options.find(option => option.id === selectedOptionId);
@@ -44,13 +46,22 @@ const Quiz = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   if (!currentQuestion) {
-
-    navigate('/result');
-
-    // return ( 
-    //     // navigate('/result');
-    // );
-
+    return (
+        <Layout>
+            <div className="">
+                {answers.map((key) => (
+                    key['values'].map((value) => {
+                        if (value['min'] <= responses[0][key['name']]['value'] && value['max'] >= responses[0][key['name']]['value']) {
+                            return <div><p>{value['response']}<br/></p><p></p> </div>;
+                        }
+                        return null;
+                    })
+                ))}
+            </div>
+            {eval_test(responses[0],true)}
+            <Button onClick={() => navigate('/datos-personales')}>Volver a empezar</Button>
+        </Layout>
+    );
   }
 
   const handleOptionChange = (optionId) => {
@@ -59,7 +70,6 @@ const Quiz = () => {
 
   return (
     <Layout>
-      <Result responses={responses} list_responses={list_responses}/>
       <div className="mb-4 w-96">
         <h2 className="text-xl font-bold mb-2">{currentQuestion.id}. {currentQuestion.text}</h2>
         {currentQuestion.options.map((option) => (
