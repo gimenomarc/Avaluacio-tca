@@ -46,6 +46,14 @@ const DatosPersonales = () => {
         } else {
             setError('');
             console.log(nombre, edad, altura, peso);
+
+            // Exportar valors d'altura i pes
+            const datosExportados = {
+                altura: altura,
+                peso: peso,
+            };
+            window.exportedDatos = datosExportados;
+
             navigate('/quiz');
         }
     }
