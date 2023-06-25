@@ -69,6 +69,20 @@ export function eval_test(llista,imc){
     }
 }
 
+export function validate_test(llista_resp){
+    if (!validate_items_infrequencia(llista_resp)){
+        return false;
+    }else if (!validate_items_correlacionats(llista_resp)){
+        return false;
+    }else if (!eval_patro_repetitiu(llista_resp)){
+        return false;
+    }else if (!eval_patro_repetitiu_2(llista_resp)){
+        return false;
+    }else{
+        return true;
+    }
+}
+
 function eval_anorexia_nerviosa(resposta,imc){
     return (imc && resposta['AS']['bool'] && resposta['P']['bool'] && resposta['AP']['bool']['F']);
 }
@@ -107,4 +121,113 @@ function eval_ruminacio(resposta){
 
 function eval_pica(resposta){
     return resposta['CSNN']['bool'];
+}
+
+function is_acord(pregunta){
+    return (pregunta === 3 || pregunta === 4);
+}
+
+function is_desacord(pregunta){
+    return (pregunta === 0 || pregunta === 1);
+}
+
+function eval_mateixa_resposta(resposta1,resposta2){
+    return ((is_acord(resposta1) && is_acord(resposta2)) || (is_desacord(resposta1) && is_desacord(resposta2)) || (resposta1 === resposta2));
+}
+
+function eval_resposta_oposada(resposta1,resposta2){
+    return ((is_acord(resposta1) && is_desacord(resposta2)) || (is_desacord(resposta1) && is_acord(resposta2)) || (resposta1 === 2 &&  resposta2 === 2));
+}
+
+function validate_items_infrequencia(llista){
+    if (llista[19] < 3){
+        return false;
+    }else if(llista[12] < 3){
+        return false;
+    }else if(llista[64] > 1){
+        return false;
+    }else if(llista[71] < 3){
+        return false;
+    }else if(llista[84] < 3){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+function validate_items_correlacionats(llista){
+    let valor = 7;
+
+    if (eval_resposta_oposada(llista[14],llista[77])){
+        valor -= 1;
+    }
+    if (eval_resposta_oposada(llista[0],llista[45])){
+        valor -= 1;
+    }
+    if (eval_resposta_oposada(llista[46],llista[76])){
+        valor -= 1;
+    }
+    if (eval_resposta_oposada(llista[33],llista[65])){
+        valor -= 1;
+    }
+    if (eval_resposta_oposada(llista[44],llista[8])){
+        valor -= 1;
+    }
+    if (eval_resposta_oposada(llista[83],llista[39])){
+        valor -= 1;
+    }
+    if (eval_resposta_oposada(llista[32],llista[79])){
+        valor -= 1;
+    }
+    if (valor < 5){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+function comptar_elements_llista(llista,elemento){
+    const contador = llista.reduce((count, num) => {
+        if (num === elemento) {
+            return count + 1;
+        }
+        return count;
+        }, 0);
+}
+
+function eval_patro_repetitiu(llista){
+    if (comptar_elements_llista(llista,0) > 78){
+        return false;
+    }
+    else if (comptar_elements_llista(llista,1) > 78){
+        return false;
+    }
+    else if (comptar_elements_llista(llista,2) > 78){
+        return false;
+    }
+    else if (comptar_elements_llista(llista,3) > 78){
+        return false;
+    }
+    else if (comptar_elements_llista(llista,4) > 78){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+function eval_patro_repetitiu_2(list_respostes) {
+  // Se evalúa si todas las respuestas del test se han respondido de manera 0 1 2 3 4 
+  // Es decir, Totalmente en desacuerdo, en desacuerdo, indiferente, de acuerdo, totalmente de acuerdo 
+  // De forma cíclica
+  let string_list = '';
+  for (let value of list_respostes) {
+    string_list += value.toString();
+  }
+  let string_patro = '01234';
+  let matches = string_list.match(new RegExp(string_patro, 'g'));
+  if (matches && matches.length === 17) {
+    return false;
+  } else {
+    return true;
+  }
 }
