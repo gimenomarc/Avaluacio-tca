@@ -76,10 +76,10 @@ const Quiz = () => {
     const handleOptionChange = (optionId) => {
         setSelectedOptionId(optionId);
     };
-
+    
     return (
         <Layout>
-            <div className="mb-4 w-96">
+            <div className="mb-4 w-96 mx-auto"> {/* Agrega la clase 'mx-auto' para centrar el contenido */}
                 <h2 className="text-xl font-bold mb-2">{currentQuestion.id}. {currentQuestion.text}</h2>
                 {currentQuestion.options.map((option) => (
                     <Option
@@ -92,9 +92,11 @@ const Quiz = () => {
                     />
                 ))}
             </div>
-            <Button onClick={handleNextQuestion}>Següent</Button>
-            <p>Altura: {datosExportados.altura}</p> 
-            <p>Peso: {datosExportados.peso}</p>
+            <div className="flex justify-center"> {/* Agrega un contenedor flex y la clase 'justify-center' para centrar el botón */}
+                <Button onClick={handleNextQuestion}>Següent</Button>
+            </div>
+            <p className="text-center">Altura: <span className="font-bold">{datosExportados.altura}</span></p> {/* Aplica la clase 'text-center' para centrar el texto */}
+            <p className="text-center">Peso: <span className="font-bold">{datosExportados.peso}</span></p> {/* Aplica la clase 'text-center' para centrar el texto */}
         </Layout>
     );
 };
