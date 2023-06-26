@@ -62,7 +62,7 @@ const DatosPersonales = () => {
         <Layout>
             <h1 className="text-4xl mb-4">Dades personals</h1>
             <p className="mb-4">Per poder realitzar el test de manera més efectiva, necessitem algunes dades personals. Aquestes informacions ens ajudaran a personalitzar millor la teva experiència.</p>
-            <form onSubmit={handleSubmit} className=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form onSubmit={handleSubmit} className="px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4">
                     <label className="block text-black text-sm font-bold mb-2">
                         Nom:

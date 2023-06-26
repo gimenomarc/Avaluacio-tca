@@ -20,7 +20,7 @@ const Quiz = () => {
 
   const handleNextQuestion = () => {
     if (selectedOptionId === null) {
-      setError('Has de seleccionar una opció.');
+      setError('Has de seleccionar una opción.');
       return;
     }
 
@@ -74,15 +74,16 @@ const Quiz = () => {
       return (
         <Layout>
           <div className="bg-gray-100 rounded p-4 mb-4">
-            {answers.map((key) =>
+            {answers.map((key, index) =>
               key['values'].map((value) => {
                 if (
                   value['min'] <= responses[0][key['name']]['value'] &&
                   value['max'] >= responses[0][key['name']]['value']
                 ) {
                   return (
-                    <div className="bg-white p-4 rounded mb-2">
-                      <p className="text-lg">{value['response']}</p>
+                    <div className="bg-white p-4 rounded mb-2" key={value['response']}>
+                      <h3 className="text-lg font-bold">{value['title']}</h3>
+                      <p>{value['response']}</p>
                     </div>
                   );
                 }
