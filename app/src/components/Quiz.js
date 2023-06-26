@@ -13,11 +13,17 @@ const Quiz = () => {
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOptionId, setSelectedOptionId] = useState(null);
+  const [error, setError] = useState('');
   const responses = Values();
   const list_responses = useState([]);
   const datosExportados = window.exportedDatos; // Obtener los datos exportados de altura y peso
 
   const handleNextQuestion = () => {
+    if (selectedOptionId === null) {
+      setError('Has de seleccionar una opció.');
+      return;
+    }
+
     const selectedOption = currentQuestion.options.find(
       (option) => option.id === selectedOptionId
     );
@@ -40,11 +46,9 @@ const Quiz = () => {
     ) {
       responses[0][categoriaQuestion]['bool'] = true;
     }
-    // Realiza acciones con la opción seleccionada
-    if (selectedOptionId !== null) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedOptionId(null);
-    }
+    setCurrentQuestionIndex(currentQuestionIndex + 1);
+    setSelectedOptionId(null);
+    setError(null);
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -102,6 +106,7 @@ const Quiz = () => {
 
   const handleOptionChange = (optionId) => {
     setSelectedOptionId(optionId);
+    setError(null);
   };
 
   return (
@@ -123,6 +128,7 @@ const Quiz = () => {
           />
         ))}
       </div>
+      {error && <p className="text-red-500 text-sm mb-2 text-center">{error}</p>}
       <div className="flex justify-center">
         <Button onClick={handleNextQuestion}>Següent</Button>
       </div>
