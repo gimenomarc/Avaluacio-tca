@@ -20,7 +20,7 @@ const Quiz = () => {
 
   const handleNextQuestion = () => {
     if (selectedOptionId === null) {
-      setError('Has de seleccionar una opción.');
+      setError('Has de seleccionar una opció.');
       return;
     }
 

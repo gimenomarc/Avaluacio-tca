@@ -42,7 +42,7 @@ const DatosPersonales = () => {
         event.preventDefault();
 
         if (!nombre || !edad || !altura || !peso || !aceptarProteccionDatos) {
-            setError('Falta completar todos los campos obligatorios.');
+            setError('Falta algun camp obligatori.');
         } else {
             setError('');
             console.log(nombre, edad, altura, peso);
@@ -97,15 +97,21 @@ const DatosPersonales = () => {
                         checked={aceptarProteccionDatos}
                         onChange={handleAceptarProteccionDatosChange}
                     />
-                    {!aceptarProteccionDatos && error && <p className="text-red-500 text-xs italic">Cal acceptar la Llei de protecció de dades.</p>}
+                    {!aceptarProteccionDatos && error && error !== 'Falta completar todos los campos obligatorios.' && (
+                        <p className="text-red-500 text-xs italic">Cal acceptar la Llei de protecció de dades.</p>
+                    )}
                 </div>
-                <p
-                    className="text-black cursor-pointer hover:underline"
-                    onClick={handleVerLeyProteccionDatos}
-                >
-                    Veure llei de protecció de dades
+                <p className="text-xs">
+                    <span
+                        className="text-blue-500 cursor-pointer hover:underline"
+                        onClick={handleVerLeyProteccionDatos}
+                    >
+                        Veure llei de protecció de dades
+                    </span>
+                    {error && error.includes('Falta completar todos los campos obligatorios.') && (
+                        <span className="text-red-500 text-xs italic"> - {error}</span>
+                    )}
                 </p>
-                {error && <p className="text-red-500 text-xs italic">{error}</p>}
                 <div className="flex justify-end">
                     <Button type="submit" className="mt-4">Guardar dades</Button>
                 </div>
