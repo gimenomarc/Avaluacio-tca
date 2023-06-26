@@ -7,9 +7,9 @@ function Contact() {
     <Layout>
       <div className="w-full max-w-md mx-auto mt-10" style={{ minWidth: '300px' }}>
         <h1 className="text-3xl font-bold mb-5 text-center">Contact Form</h1>
-        <form className="shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form className=" px-8 pt-6 pb-8 mb-4 ">
           <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2 text-left" htmlFor="name">
+            <label className="block text-black text-sm font-bold mb-2 text-left" htmlFor="name">
               Nom
             </label>
             <input
@@ -20,7 +20,7 @@ function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2 text-left" htmlFor="surname">
+            <label className="block text-black text-sm font-bold mb-2 text-left" htmlFor="surname">
               Cognom
             </label>
             <input
@@ -31,7 +31,7 @@ function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2 text-left" htmlFor="email">
+            <label className="block text-black text-sm font-bold mb-2 text-left" htmlFor="email">
               Email
             </label>
             <input
@@ -42,7 +42,7 @@ function Contact() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2 text-left" htmlFor="phone">
+            <label className="block text-black text-sm font-bold mb-2 text-left" htmlFor="phone">
               Telèfon
             </label>
             <input
@@ -53,7 +53,7 @@ function Contact() {
             />
           </div>
           <div className="mb-6">
-            <label className="block text-white text-sm font-bold mb-2 text-left" htmlFor="message">
+            <label className="block text-black text-sm font-bold mb-2 text-left" htmlFor="message">
               Comentaris
             </label>
             <textarea

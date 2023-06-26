@@ -12,32 +12,32 @@ const InfoTCA = () => {
                 </p>
                 <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     <Link to="/infoTCA/pica" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
-                        <div className="flex justify-center items-center h-full">{/* Agregamos div para centrar el texto */}
+                        <div className="flex justify-center items-center h-full">
                             Pica
                         </div>
                     </Link>
                     <Link to="/infoTCA/trastorn-ruminacio" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
-                        <div className="flex justify-center items-center h-full">{/* Agregamos div para centrar el texto */}
+                        <div className="flex justify-center items-center h-full">
                             Trastorn de Ruminació
                         </div>
                     </Link>
-                    <Link to="/infoTCA/trastorn-evitacio-restriccio-ingesta-aliments" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
-                        <div className="flex justify-center items-center h-full">{/* Agregamos div para centrar el texto */}
+                    <Link to="/infoTCA/trastorn-ingesta-aliments" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
+                        <div className="flex justify-center items-center h-full">
                             Trastorn d'Evitació/Restricció de la Ingesta d'Aliments
                         </div>
                     </Link>
                     <Link to="/infoTCA/anorexia-nerviosa" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
-                        <div className="flex justify-center items-center h-full">{/* Agregamos div para centrar el texto */}
+                        <div className="flex justify-center items-center h-full">
                             Anorèxia Nerviosa
                         </div>
                     </Link>
                     <Link to="/infoTCA/bulimia-nerviosa" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
-                        <div className="flex justify-center items-center h-full">{/* Agregamos div para centrar el texto */}
+                        <div className="flex justify-center items-center h-full">
                             Bulímia Nerviosa
                         </div>
                     </Link>
                     <Link to="/infoTCA/trastorn-fartaneres" className="border-2 border-black rounded-lg py-4 px-6 text-center hover:bg-green-500 hover:text-black transition-colors duration-200">
-                        <div className="flex justify-center items-center h-full">{/* Agregamos div para centrar el texto */}
+                        <div className="flex justify-center items-center h-full">
                             Trastorn de Fartaneres
                         </div>
                     </Link>
