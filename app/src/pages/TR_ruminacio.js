@@ -4,8 +4,8 @@ import Layout from '../components/Layout';
 const TRRuminacioPage = () => {
   return (
     <Layout>
-      <div className="max-w-3xl mx-auto p-8">
-        <h2 className="text-xl font-bold mt-8">TRASTORN DE RUMINACIÓ</h2>
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold mt-8 mb-4">TRASTORN DE RUMINACIÓ</h2>
         <p>La característica principal del trastorn de ruminació és la regurgitació repetida d'aliments, el menjar empassat prèviament, que pot estar parcialment digerit, es torna a la boca aparentment sense nàusees, arcades involuntàries ni desagradat, aquest es pot tornar a mastegar per després escopir-se de la boca o empassar-se (APA, 2014), durant un període mínim d'un mes, essent freqüent i produint-se almenys força vegades per setmana, típicament diàriament (APA, 2014).</p>
         <p>El trastorn no s'explica millor per una afecció gastrointestinal o una altra afecció mèdica associada i no es produeix exclusivament durant el curs d'una anorèxia nerviosa, una bulímia nerviosa, un trastorn d'atracaments o un trastorn d'evitació/restricció de la ingestió d'aliments (APA, 2014).</p>
         <p>En el cas de que els símptomes es produeixin en el context d'un altre trastorn mental, aquests han de ser prou greus per justificar una atenció clínica addicional i representar un aspecte primordial de la presentació de l'individu que requereix la intervenció (APA, 2014).</p>
