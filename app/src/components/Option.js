@@ -12,7 +12,7 @@ const Option = ({ text, checked, onChange }) => {
         onChange={onChange}
         className="hidden" // Esto esconderá el checkbox, pero todavía se activará al hacer clic en el div
       />
-      <label className={`block w-full text-left ${checked ? 'text-white' : 'text-white'} hover:text-black`}>{text}</label>
+      <label className={`block w-full text-left ${checked ? 'text-black' : 'text-black'} hover:text-black`}>{text}</label>
     </div>
   );
 };

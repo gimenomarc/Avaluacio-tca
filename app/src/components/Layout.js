@@ -2,8 +2,8 @@ import React from 'react';
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-gray-900 min-h-screen flex items-center justify-center">
-      <div className="bg-gray-800 p-10 rounded-lg shadow-2xl max-w-4xl w-full text-white">
+    <div className="bg-blue-100 min-h-screen flex items-center justify-center">
+      <div className="bg-white p-10 rounded-lg shadow-lg max-w-4xl w-full text-gray-800">
         {children}
       </div>
     </div>
