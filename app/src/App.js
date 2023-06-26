@@ -15,7 +15,6 @@ import TRFartaneresPage from './pages/TR_fartaneres';
 import LeyProteccionDatosPage from './pages/proteccioDades';
 import Header from './components/Header'
 
-
 function App() {
   return (
     <Router>

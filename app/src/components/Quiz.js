@@ -49,25 +49,33 @@ const Quiz = () => {
         if (!validate_test(list_responses[0])) {
             return (
                 <Layout>
-                    <div>No es pot evaluar el test degut a les respostes proporcionades</div>
-                    <Button onClick={() => navigate('/datos-personales')}>Volver a empezar</Button>
+                    <div className="flex flex-col items-center justify-center h-full">
+                        <p className="text-xl font-bold mb-4">No es posible evaluar el test debido a las respuestas proporcionadas.</p>
+                        <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onClick={() => navigate('/datos-personales')}>Volver a empezar</Button>
+                    </div>
                 </Layout>
             );
         } else {
             return (
                 <Layout>
-                    <div className="">
+                    <div className="bg-gray-100 rounded p-4 mb-4">
                         {answers.map((key) => (
                             key['values'].map((value) => {
                                 if (value['min'] <= responses[0][key['name']]['value'] && value['max'] >= responses[0][key['name']]['value']) {
-                                    return <div><p>{value['response']}<br /></p><p></p> </div>;
+                                    return (
+                                        <div className="bg-white p-4 rounded mb-2">
+                                            <p className="text-lg">{value['response']}</p>
+                                        </div>
+                                    );
                                 }
                                 return null;
                             })
                         ))}
                     </div>
-                    {eval_test(responses[0], true)}
-                    <Button onClick={() => navigate('/datos-personales')}>Volver a empezar</Button>
+                    <div className="bg-gray-100 rounded p-4 mb-4">
+                        {eval_test(responses[0], true)}
+                    </div>
+                    <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onClick={() => navigate('/datos-personales')}>Volver a empezar</Button>
                 </Layout>
             );
         }
@@ -76,11 +84,13 @@ const Quiz = () => {
     const handleOptionChange = (optionId) => {
         setSelectedOptionId(optionId);
     };
-    
+
     return (
         <Layout>
-            <div className="mb-4 w-96 mx-auto"> {/* Agrega la clase 'mx-auto' para centrar el contenido */}
+            <div className="mb-4 w-96 mx-auto">
                 <h2 className="text-xl font-bold mb-2">{currentQuestion.id}. {currentQuestion.text}</h2>
+            </div>
+            <div className="mb-4 w-80 mx-auto">
                 {currentQuestion.options.map((option) => (
                     <Option
                         key={option.id}
@@ -92,16 +102,13 @@ const Quiz = () => {
                     />
                 ))}
             </div>
-            <div className="flex justify-center"> {/* Agrega un contenedor flex y la clase 'justify-center' para centrar el botón */}
+            <div className="flex justify-center">
                 <Button onClick={handleNextQuestion}>Següent</Button>
             </div>
-            <p className="text-center">Altura: <span className="font-bold">{datosExportados.altura}</span></p> {/* Aplica la clase 'text-center' para centrar el texto */}
-            <p className="text-center">Peso: <span className="font-bold">{datosExportados.peso}</span></p> {/* Aplica la clase 'text-center' para centrar el texto */}
+            <p className="text-center">Altura: <span className="font-bold">{datosExportados.altura}</span></p>
+            <p className="text-center">Peso: <span className="font-bold">{datosExportados.peso}</span></p>
         </Layout>
     );
 };
 
 export default Quiz;
-
-
-
