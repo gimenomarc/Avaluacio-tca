@@ -14,7 +14,7 @@ const Intro = () => {
         <Layout>
             <h1 className="text-4xl mb-4">Test trastorns de la conducta alimentària i de la ingesta d'aliments(TCA)</h1>
             <div className="text-2xl mt-8">
-                <p className="mb-2">Aquest és un text experimental.</p>
+                <p className="mb-2">Aquest és un test experimental.</p>
                 <p className="mb-2">Benvingut al Test LLURBA de Trastorns de la Conducta Alimentària.</p>
                 <p className="mb-8">A continuació, trobaràs les instruccions per a completar el test de manera adequada.</p>
             </div>
