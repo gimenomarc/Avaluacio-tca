@@ -12,10 +12,11 @@ const Intro = () => {
 
     return (
         <Layout>
-            <h1 className="text-4xl mb-4">Test de Capacitats Atencionals (TCA)</h1>
+            <h1 className="text-4xl mb-4">Test trastorns de la conducta alimentària i de la ingesta d'aliments(TCA)</h1>
             <div className="text-2xl mt-8">
+                <p className="mb-2">Aquest és un text experimental.</p>
                 <p className="mb-2">Benvingut al Test LLURBA de Trastorns de la Conducta Alimentària.</p>
-                <p className="mb-8">A continuació, trobaràs les instruccions per a completar el test de manera adequada. Si tens algun dubte durant el procés, si us plau, consulta el teu psicòleg.</p>
+                <p className="mb-8">A continuació, trobaràs les instruccions per a completar el test de manera adequada.</p>
             </div>
             <div className="mb-8">
                 <p className="mb-4"><span className="font-bold">1. </span>Aquest test té com a finalitat avaluar els trastorns de la conducta alimentària. S'espera que responguis amb sinceritat a cadascuna de les preguntes.</p>

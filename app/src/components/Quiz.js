@@ -51,15 +51,16 @@ const Quiz = () => {
     setError(null);
   };
 
+  let imc = datosExportados.peso / Math.pow((datosExportados.altura/100),2);
   const currentQuestion = questions[currentQuestionIndex];
 
   if (!currentQuestion) {
-    if (!validate_test(list_responses[0])) {
+    if (!validate_test(list_responses[0]) !== '') {
       return (
         <Layout>
           <div className="flex flex-col items-center justify-center h-full">
             <p className="text-xl font-bold mb-4">
-              No es posible evaluar el test debido a las respuestas proporcionadas.
+          {validate_test(list_responses[0])}
             </p>
             <Button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
@@ -82,7 +83,7 @@ const Quiz = () => {
                 ) {
                   return (
                     <div className="bg-white p-4 rounded mb-2" key={value['response']}>
-                      <h3 className="text-lg font-bold">{value['title']}</h3>
+                      <h3 className="text-lg font-bold">{key['title']}</h3>
                       <p>{value['response']}</p>
                     </div>
                   );
@@ -92,7 +93,7 @@ const Quiz = () => {
             )}
           </div>
           <div className="bg-gray-100 rounded p-4 mb-4">
-            {eval_test(responses[0], true)}
+            {eval_test(responses[0], imc)}
           </div>
           <Button
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"

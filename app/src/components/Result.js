@@ -5,8 +5,14 @@ export function eval_test(llista,imc){
     let medicament = false;
     let exercici = false;
     let dieta = false;
+    let imc_bool = false;
+    if (imc >= 18.5){
+        imc_bool = true;
+    }else{
+        imc_bool = false;
+    }
 
-    if (eval_anorexia_nerviosa(llista,imc)){
+    if (eval_anorexia_nerviosa(llista,imc_bool)){
         if (eval_vomit(llista)){
             vomit = true;
         }
@@ -15,71 +21,71 @@ export function eval_test(llista,imc){
         }
         if (vomit || medicament){
             if (vomit && !medicament && !eval_fartaneres(llista)){
-                return <div>El diagnostic final es anorexia nerviosa amb purgues de vomit.</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purgues de vomit.</p></div>
             }else if(!vomit && medicament && !eval_fartaneres(llista)){
-                return <div>El diagnostic final es anorexia nerviosa amb purges de medicament.</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de medicament.</p></div>
             }else if(vomit && medicament && !eval_fartaneres(llista)){
-                return <div>El diagnostic final es anorexia nerviosa amb purges de vomit i medicament.</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de vomit i medicament.</p></div>
             }else if(vomit && medicament && eval_fartaneres(llista)){
-                return <div>El diagnostic final es purges amb vomit i medicament, i trastorn de fartaneres</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de vomit i medicament, i trastorn de fartaneres</p></div>
             }else if(vomit && !medicament && eval_fartaneres(llista)){
-                return <div>El diagnostic final es purges de vomit amb transtorn de fartaneres</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de vomit amb trastorn de fartaneres</p></div>
             }else{
-                return <div>El diagnostic final es purges de medicament amb transtorn de fartaneres</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de medicament i trastorn de fartaneres</p></div>
             }
         }else{
             if(eval_exercici(llista) && eval_an_restrictiu_dieta(llista)){
-                return <div>El diagnostic final es anorexia nerviosa amb restricció d'exercici i dieta.</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb restricció d'exercici i dieta.</p></div>
             }else if(eval_exercici(llista) && !eval_an_restrictiu_dieta(llista)){
-                return <div>El diagnostic final es anorexia nerviosa amb restricció d'exercici</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb restricció d'exercici</p></div>
             }else if(!eval_exercici(llista) && eval_an_restrictiu_dieta(llista)){
-                return <div>El diagnostic final es anorexia nerviosa amb restricció de dieta</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb restricció de dieta</p></div>
             }else{
-                return <div>El diagnostic final es anorexia nerviosa</div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)}</p></div>
             }
         }
-    }else if(eval_bulimia_nerviosa(llista,imc)){
+    }else if(eval_bulimia_nerviosa(llista,imc_bool)){
         if (eval_vomit(llista) && eval_exercici(llista) && eval_medicament(llista)){
-            return <div>El diagnostic final es bulimia nerviosa amb vomits, exercici i medicaments</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb vomits, exercici i medicaments</p></div>
         }else if(!eval_vomit(llista) && eval_exercici(llista) && eval_medicament(llista)){
-            return <div>El diagnostic final es bulimia nerviosa amb exercici i medicaments.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb exercici i medicaments.</p></div>
         }else if(!eval_vomit(llista) && !eval_exercici(llista) && eval_medicament(llista)){
-            return <div>El diagnostic final es bulimia nerviosa amb medicaments.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb medicaments.</p></div>
         }else if(eval_vomit(llista) && !eval_exercici(llista) && eval_medicament(llista)){
-            return <div>El diagnostic final es bulimia nerviosa amb vomits i medicaments.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb vomits i medicaments.</p></div>
         }else if(eval_vomit(llista) && !eval_exercici(llista) && !eval_medicament(llista)){
-            return <div>El diagnostic final es bulimia nerviosa amb vomits.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb vomits.</p></div>
         }else if(!eval_vomit(llista) && eval_exercici(llista) && !eval_medicament(llista)){
-            return <div>El diagnostic final es bulimia nerviosa amb exercici.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb exercici.</p></div>
         }else if(eval_vomit(llista) && eval_exercici(llista) && !eval_medicament(llista)){
-            return <div>El diagnostic final es builimia nerviosa amb vomits i exercici.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb builimia nerviosa amb vomits i exercici.</p></div>
         }else{
-            return <div>El diagnostic final es bulimia nerviosa</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa</p></div>
         }
     }else if(eval_fartaneres(llista)){
-            return <div>El diagnostic final es transtorn de fartaneres.</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb trastorn de fartaneres.</p></div>
     }else if(eval_teria(llista,imc)){
-            return <div>El diagnostric final es transtorn de evitació/restricció de la ingesta d'aliments</div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb trastorn de evitació/restricció de la ingesta d'aliments.</p></div>
     }else if(eval_ruminacio(llista)){
-        return <div>El diagnostic final es transtorn de ruminació</div>
+        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb trastorn de ruminació</p></div>
     }else if(eval_pica(llista)){
-        return <div>El diagnostric final es PICA.</div>
+        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb PICA.</p></div>
     }else{
-        return <div>El diagnostic final no es compatible amb cap TCA.</div>
+        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia no es compatible amb cap TCA.</p></div>
     }
 }
 
 export function validate_test(llista_resp){
     if (!validate_items_infrequencia(llista_resp)){
-        return false;
+        return 'No es possible evaluar el test degut als items infreqüents.';
     }else if (!validate_items_correlacionats(llista_resp)){
-        return false;
+        return 'No es possible evaluar el test degut als items correlacionats.';
     }else if (!eval_patro_repetitiu(llista_resp)){
-        return false;
+        return 'No es possible evaluar el test degut a un percetatge elevat de respostes iguals.';
     }else if (!eval_patro_repetitiu_2(llista_resp)){
-        return false;
+        return 'No es possible evaluar el test degut a un patró marcat.';
     }else{
-        return true;
+        return '';
     }
 }
 
@@ -158,25 +164,25 @@ function validate_items_infrequencia(llista){
 function validate_items_correlacionats(llista){
     let valor = 7;
 
-    if (eval_resposta_oposada(llista[14],llista[77])){
+    if (!eval_resposta_oposada(llista[14],llista[77])){
         valor -= 1;
     }
-    if (eval_resposta_oposada(llista[0],llista[45])){
+    if (!eval_resposta_oposada(llista[0],llista[45])){
         valor -= 1;
     }
-    if (eval_resposta_oposada(llista[46],llista[76])){
+    if (!eval_resposta_oposada(llista[46],llista[76])){
         valor -= 1;
     }
-    if (eval_resposta_oposada(llista[33],llista[65])){
+    if (!eval_resposta_oposada(llista[33],llista[65])){
         valor -= 1;
     }
-    if (eval_resposta_oposada(llista[44],llista[8])){
+    if (!eval_resposta_oposada(llista[44],llista[8])){
         valor -= 1;
     }
-    if (eval_resposta_oposada(llista[83],llista[39])){
+    if (!eval_resposta_oposada(llista[83],llista[39])){
         valor -= 1;
     }
-    if (eval_resposta_oposada(llista[32],llista[79])){
+    if (!eval_resposta_oposada(llista[32],llista[79])){
         valor -= 1;
     }
     if (valor < 5){
@@ -230,4 +236,18 @@ function eval_patro_repetitiu_2(list_respostes) {
   } else {
     return true;
   }
+}
+
+function calc_gravetat(imc){
+    if (imc < 18.5 && imc >= 17){
+        return "lleu";
+    }else if(imc < 17 && imc >= 16){
+        return "moderada";
+    }else if(imc < 16 && imc >= 15){
+        return "greu";
+    }else if(imc < 15){
+        return "extrem";
+    }else{
+        return "";
+    }
 }
