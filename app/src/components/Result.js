@@ -21,55 +21,55 @@ export function eval_test(llista,imc){
         }
         if (vomit || medicament){
             if (vomit && !medicament && !eval_fartaneres(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purgues de vomit.</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb purgues de vomit.</p></div>
             }else if(!vomit && medicament && !eval_fartaneres(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de medicament.</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb purges de medicament.</p></div>
             }else if(vomit && medicament && !eval_fartaneres(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de vomit i medicament.</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb purges de vomit i medicament.</p></div>
             }else if(vomit && medicament && eval_fartaneres(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de vomit i medicament, i trastorn de fartaneres</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb purges de vomit i medicament, i trastorn de fartaneres</p></div>
             }else if(vomit && !medicament && eval_fartaneres(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de vomit amb trastorn de fartaneres</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb purges de vomit amb trastorn de fartaneres</p></div>
             }else{
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb purges de medicament i trastorn de fartaneres</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb purges de medicament i trastorn de fartaneres</p></div>
             }
         }else{
             if(eval_exercici(llista) && eval_an_restrictiu_dieta(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb restricció d'exercici i dieta.</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb restricció d'exercici i dieta.</p></div>
             }else if(eval_exercici(llista) && !eval_an_restrictiu_dieta(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb restricció d'exercici</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb restricció d'exercici</p></div>
             }else if(!eval_exercici(llista) && eval_an_restrictiu_dieta(llista)){
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)} amb restricció de dieta</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)} amb restricció de dieta</p></div>
             }else{
-                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb anorexia nerviosa {calc_gravetat(imc)}</p></div>
+                return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb anorèxia nerviosa {calc_gravetat(imc)}</p></div>
             }
         }
     }else if(eval_bulimia_nerviosa(llista,imc_bool)){
         if (eval_vomit(llista) && eval_exercici(llista) && eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb vomits, exercici i medicaments</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa amb vomits, exercici i medicaments</p></div>
         }else if(!eval_vomit(llista) && eval_exercici(llista) && eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb exercici i medicaments.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa amb exercici i medicaments.</p></div>
         }else if(!eval_vomit(llista) && !eval_exercici(llista) && eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb medicaments.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa amb medicaments.</p></div>
         }else if(eval_vomit(llista) && !eval_exercici(llista) && eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb vomits i medicaments.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa amb vomits i medicaments.</p></div>
         }else if(eval_vomit(llista) && !eval_exercici(llista) && !eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb vomits.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa amb vomits.</p></div>
         }else if(!eval_vomit(llista) && eval_exercici(llista) && !eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa amb exercici.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa amb exercici.</p></div>
         }else if(eval_vomit(llista) && eval_exercici(llista) && !eval_medicament(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb builimia nerviosa amb vomits i exercici.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb builimia nerviosa amb vomits i exercici.</p></div>
         }else{
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb bulimia nerviosa</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb bulímia nerviosa</p></div>
         }
     }else if(eval_fartaneres(llista)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb trastorn de fartaneres.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb trastorn de fartaneres.</p></div>
     }else if(eval_teria(llista,imc)){
-            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb trastorn de evitació/restricció de la ingesta d'aliments.</p></div>
+            return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb trastorn de evitació/restricció de la ingesta d'aliments.</p></div>
     }else if(eval_ruminacio(llista)){
-        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb trastorn de ruminació</p></div>
+        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb trastorn de ruminació</p></div>
     }else if(eval_pica(llista)){
-        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia es compatible amb PICA.</p></div>
+        return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia és compatible amb PICA.</p></div>
     }else{
         return <div className="flex flex-col items-center justify-center h-full"><p className="text-xl font-bold mb-4">La simptomatologia no es compatible amb cap TCA.</p></div>
     }

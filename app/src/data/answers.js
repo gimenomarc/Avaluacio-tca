@@ -7,17 +7,17 @@ const answers = [
             {
               min: 0,
               max: 7,
-              response: 'S’evidencia una alta autoestima, mostra que es sent còmoda amb si mateixa i s’accepta tal com és, sense necessitat de comparar-se amb els altres, valora les seves habilitats i èxits, reconeixent el seu propi valor. ' 
+              response: 'S’evidencia una alta autoestima, mostra que es sent còmoda amb si mateix/a i s’accepta tal com és, sense necessitat de comparar-se amb els altres, valora les seves habilitats i èxits, reconeixent el seu propi valor. ' 
             },
             {
               min: 8,
               max: 16,
-              response: 'S’evidencia una autoestima mitjana, mostra una acceptació moderada de si mateixa, tot i que pot tenir moments de confiança, també pot experimentar dubtes i autocrítica, tendint a comparar-se ocasionalment amb els altres, cercant validació i reconeixement extern. Reconeix algunes de les seves habilitats i èxits, encara que de vegades pot subestimar el seu propi valor.',
+              response: 'S’evidencia una autoestima mitjana, mostra una acceptació moderada de si mateix/a, tot i que pot tenir moments de confiança, també pot experimentar dubtes i autocrítica, tendint a comparar-se ocasionalment amb els altres, cercant validació i reconeixement extern. Reconeix algunes de les seves habilitats i èxits, encara que de vegades pot subestimar el seu propi valor.',
             },
             {
 	      min: 17,
 	      max: 24,
-              response: 'S’evidencia una baixa autoestima, mostra una profunda manca de confiança en si mateixa i una dificultat per acceptar-se tal com és, constantment es compara negativament amb els altres, sentint-se inferior i sense valor, tendint a subestimar les seves habilitats i èxits, i te dificultats per reconèixer qualsevol forma d’èxit personal.',
+              response: 'S’evidencia una baixa autoestima, mostra una profunda manca de confiança en si mateix/a i una dificultat per acceptar-se tal com és, constantment es compara negativament amb els altres, sentint-se inferior i sense valor, tendint a subestimar les seves habilitats i èxits, i te dificultats per reconèixer qualsevol forma d’èxit personal.',
             },
         ],
     },
@@ -39,7 +39,7 @@ const answers = [
             {
               min: 11,
               max: 16,
-              response: 'S’evidencia una autopercepció negativa, mostra relacionar de les capacitats i la vàlua personal amb l’aspecte físic, tendint a jutjar-se durament basant-se en estàndards externs de bellesa i aparença, sentint que no és suficient o digna de valor a causa del seu aspecte.',
+              response: 'S’evidencia una autopercepció negativa, mostra una relació desequilibrada entre les capacitats, la vàlua personal i l’aspecte físic, tendint a jutjar-se durament basant-se en estàndards externs de bellesa i aparença, sentint que no és suficient o digna de valor a causa del seu aspecte.',
             },
         ],
     },

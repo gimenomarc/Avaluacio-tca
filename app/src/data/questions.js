@@ -53,7 +53,7 @@ const questions = [
     },
     {
         id: 5,
-        text: 'M’han d’alimentar de manera artificial (a través duna sonda col·locada a lestómac o lintestí prim o a través duna sonda inserida en una vena mitjançant la qual els nutrients ingressen a la sang directament).',
+        text: 'M’han d’alimentar de manera artificial (a través d’una sonda col·locada a l’estómac o l’intestí prim o a través d’una sonda inserida en una vena mitjançant la qual els nutrients ingressen a la sang directament).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -66,7 +66,7 @@ const questions = [
     },
     {
         id: 6,
-        text: 'En els últims 3 mesos prenc sovint (més d’un cop per setmana) prenc medicaments contra el restrenyiment ocasional.',
+        text: 'En els últims tres mesos sovint (més d’un cop per setmana) prenc medicaments contra el restrenyiment ocasional.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -131,7 +131,7 @@ const questions = [
     },
     {
         id: 11,
-        text: 'En els últims 3 mesos sovint (més d’un cop per setmana) penso que he de perdre pes.',
+        text: 'En els últims tres mesos sovint (més d’un cop per setmana) penso que he de perdre pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -170,7 +170,7 @@ const questions = [
     },
     {
         id: 14,
-        text: 'En els últims 3 mesos sovint (més d’un cop per setmana) mesuro les diferents parts del meu cos.',
+        text: 'En els últims tres mesos sovint (més d’un cop per setmana) mesuro les diferents parts del meu cos.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -404,7 +404,7 @@ const questions = [
     },
     {
         id: 32,
-        text: 'En els últims 3 mesos i més d’un cop per setmana he menjat fins estar desagradablement ple/na.',
+        text: 'En els últims tres mesos i més d’un cop per setmana he menjat fins estar desagradablement ple/na.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -469,7 +469,7 @@ const questions = [
     },
     {
         id: 37,
-        text: 'Menjo substàncies que no són nutritives (per exemple, xiclets, gel, paper, cola,..)',
+        text: 'Ingereixo substàncies que no són nutritives (per exemple, pintura, gel, paper, cola,..)',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -482,7 +482,7 @@ const questions = [
     },
     {
         id: 38,
-        text: 'La meva alimentació és correcte i adequada i em permet gaudir d’una bona salut.',
+        text: 'La meva alimentació és correcte i adequada, i em permet gaudir d’una bona salut.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -560,7 +560,7 @@ const questions = [
     },
     {
         id: 44,
-        text: 'Tinc por de veure’m prim.',
+        text: 'Tinc por de veure’m prim/a.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -690,7 +690,7 @@ const questions = [
     },
     {
         id: 54,
-        text: 'En els últims 3 mesos i més d’un cop per setmana he perdut el control del que menjo.',
+        text: 'En els últims tres mesos i més d’un cop per setmana he perdut el control del que menjo.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -716,7 +716,7 @@ const questions = [
     },
     {
         id: 56,
-        text: 'Tinc regurgitacions (expulsió de menjar procedent de lesòfag o de lestómac sense que hi hagi nàusees ni contraccions enèrgiques dels músculs abdominals).',
+        text: 'Tinc regurgitacions (expulsió de menjar procedent de l’esòfag o de l’estómac sense que hi hagi nàusees ni contraccions enèrgiques dels músculs abdominals).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -755,7 +755,7 @@ const questions = [
     },
     {
         id: 59,
-        text: 'Normalment (més de 3 cops per setmana) em sento molt cansat/da o sense energia.',
+        text: 'Normalment (més de tres cops per setmana) em sento molt cansat/da o sense energia.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -794,7 +794,7 @@ const questions = [
     },
     {
         id: 62,
-        text: 'Si tinc un esdeveniment, però no em sento a gust amb el meu aspecte, no hi vaig.',
+        text: 'Si tinc un esdeveniment, però no em sento còmode amb el meu aspecte, no hi vaig.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -807,7 +807,7 @@ const questions = [
     },
     {
         id: 63,
-        text: 'Tinc menys desig sexual del que crec que hauria de tenir.',
+        text: 'Tinc menys desig sexual del que suposadament hauria de tenir.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -846,7 +846,7 @@ const questions = [
     },
     {
         id: 66,
-        text: 'Em costa gaudir inclús de les coses que m’agraden.',
+        text: 'Em costa gaudir fins i tot de les coses que m’agraden.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -898,7 +898,7 @@ const questions = [
     },
     {
         id: 70,
-        text: 'En els últims 3 mesos me pesat sovint (més de 2 cops per setmana) per controlar el meu pes.',
+        text: 'En els últims tres mesos m’he pesat sovint (més de dos cops per setmana) per controlar el meu pes.',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
@@ -937,7 +937,7 @@ const questions = [
     },
     {
         id: 73,
-        text: 'En els últims 3 mesos sovint (més d’un cop per setmana) m’administro ènemes (medicament líquid que sintrodueix a lorganisme a través de lanus i que serveix per netejar i descarregar l’intestí).',
+        text: 'En els últims tres mesos sovint (més d’un cop per setmana) m’administro ènemes (medicament líquid que s’introdueix a l’organisme a través de l’anus i que serveix per netejar i descarregar l’intestí).',
         options: [
             { id: 1, text: 'Totalment en desacord' },
             { id: 2, text: 'En desacord' },
